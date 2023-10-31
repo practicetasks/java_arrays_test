@@ -23,9 +23,28 @@
 #### Тесты
 Проект содержит набор юнит-тестов для каждого из методов. Они помогут убедиться в корректности работы методов и могут быть использованы в качестве примеров для тестирования вашего собственного кода.
 
-#### Как запустить тест
+
+
+## Как запустить тест
 
 1. Необходимо установить библиотеку junit на проект
    1. Заходим в класс `ArraysTest`, которая находится в папке `test`
-   
    2. Импортируем библиотеку
+      <img width="778" alt="Screenshot 2023-10-31 at 12 06 47" src="https://github.com/practicetasks/java_arrays_test/assets/122010324/d5a09bbe-17e2-466f-96ea-40ebb07f38f4">
+      <br>
+      <br>
+   3. Нажимаем `OK` <br>
+      <img width="702" alt="Screenshot 2023-10-31 at 12 06 55" src="https://github.com/practicetasks/java_arrays_test/assets/122010324/1ee60f4c-e108-4a70-8faf-b621cd11e7e9">
+      <br>
+<br>
+<br>
+2. Запускаем тесты <br>
+<br>
+<img width="682" alt="Screenshot 2023-10-31 at 12 27 06" src="https://github.com/practicetasks/java_arrays_test/assets/122010324/0313ac8c-7a05-48ba-b46f-ae256c6f5e1d">
+<br>
+<br>
+<br>
+3. Смотрим результаты тестов <br>
+<br>
+<img width="1350" alt="Screenshot 2023-10-31 at 12 35 09" src="https://github.com/practicetasks/java_arrays_test/assets/122010324/0d9c1ff9-8f9b-419f-9d3e-ea5db28bc6c4">
+
