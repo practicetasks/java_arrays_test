@@ -28,32 +28,42 @@ public class ArraysTest {
 
     @Test
     public void testGetActualSize() {
-        assertEquals(6, engine.getActualSize(books));
+        System.out.print("Тест метода getActualSize()   ");
+        assertEquals(6, engine.getActualSize(books), "тест пройден");
+        System.out.println(" - успех");
     }
 
     @Test
     public void testGetBookTitles() {
+        System.out.print("Тест метода getBookTitles()   ");
         String[] expected = {
                 "1984", "Улисс", "Война и мир", "Гарри Поттер и философский камень", "Преступление и наказание", "Гордость и предубеждение"
         };
         assertArrayEquals(expected, engine.getBookTitles(books));
+        System.out.println(" - успех");
     }
 
     @Test
     public void testFindBookByTitle() {
+        System.out.print("Тест метода findBookByTitle() ");
         Book expected = books[1];
         assertEquals(expected, engine.findBookByTitle(books, "1984"));
+        System.out.println(" - успех");
     }
 
     @Test
     public void testCountTotalPages() {
+        System.out.print("Тест метода countTotalPages() ");
         assertEquals(3560, engine.countTotalPages(books));
+        System.out.println(" - успех");
     }
 
     @Test
     public void testFindLargestBook() {
+        System.out.print("Тест метода findLargestBook() ");
         Book expected = books[4];
         assertEquals(expected, engine.findLargestBook(books));
+        System.out.println(" - успех");
     }
 }
 
