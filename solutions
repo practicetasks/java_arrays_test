@@ -1,0 +1,72 @@
+
+    // Метод должен вывести все книги массива, проигнорировать пустые места
+    public void printAllBooks(Book[] books) {
+        for (Book book : books) {
+            if (book != null) {
+                System.out.println("- " + book.title + ": " + book.author + " " + book.pages + " стр");
+            }
+        }
+    }
+
+
+    // Метод должен посчитать фактическое кол-во книг, не учитывать null
+    public int getActualSize(Book[] books) {
+        int count = 0;
+        for (Book book : books) {
+            if (book != null) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
+    // Метод должен возвращать объект книги из массива по переданному названию
+    public Book findBookByTitle(Book[] books, String title) {
+        for (Book book : books) {
+            if (book != null && book.title.equals(title)) {
+                return book;
+            }
+        }
+        return null;
+    }
+
+
+    // Метод для подсчета общего числа страниц во всех книгах массива
+    public int countTotalPages(Book[] books) {
+        int totalPages = 0;
+        for (Book book : books) {
+            if (book != null) {
+                totalPages += book.pages;
+            }
+        }
+        return totalPages;
+    }
+
+
+    // Метод должен возвращать массив строк, которая состоит только из названия книг
+    public String[] getBookTitles(Book[] books) {
+        String[] titles = new String[getActualSize(books)];
+        int counterForTitles = 0;
+        for (Book book : books) {
+            if (book != null) {
+                titles[counterForTitles] = book.title;
+                counterForTitles++;
+            }
+        }
+        return titles;
+    }
+
+
+    // Метод для поиска самой толстой книги в массиве
+    public Book findLargestBook(Book[] books) {
+        Book largestBook = null;
+        int maxPages = 0;
+        for (Book book : books) {
+            if (book != null && book.pages > maxPages) {
+                largestBook = book;
+                maxPages = book.pages;
+            }
+        }
+        return largestBook;
+    }
