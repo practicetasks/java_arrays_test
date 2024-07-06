@@ -29,7 +29,7 @@ public class ArraysTest {
     @Test
     public void testGetActualSize() {
         System.out.print("Тест метода getActualSize()   ");
-        assertEquals(6, engine.getActualSize(books), "тест пройден");
+        assertEquals(6, engine.getActualSize(books));
         System.out.println(" - успех");
     }
 
